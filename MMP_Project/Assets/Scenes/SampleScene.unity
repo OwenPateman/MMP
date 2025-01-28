@@ -129,6 +129,8 @@ GameObject:
   - component: {fileID: 389348457}
   - component: {fileID: 389348456}
   - component: {fileID: 389348455}
+  - component: {fileID: 389348458}
+  - component: {fileID: 389348459}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -191,12 +193,52 @@ Transform:
   m_GameObject: {fileID: 389348454}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -25.27, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &389348458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389348454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 4118376344
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
+--- !u!114 &389348459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389348454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622616e2479aead4583b4ed54970b45c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  hostPrefab: {fileID: 8946537010725206704, guid: c0fe9ed59b212a54fb9345090786fd5a, type: 3}
+  clientPrefab: {fileID: 965999613522909913, guid: b101230baf1036a488a50751a25dd703, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +559,7 @@ Transform:
   m_GameObject: {fileID: 619394800}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -25.49, y: 0.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -665,6 +707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 744313903302873110, guid: 703b1e04c8a5ddc4b9c860006cd56b9a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770101313459541742, guid: 703b1e04c8a5ddc4b9c860006cd56b9a, type: 3}
       propertyPath: m_Name
       value: PlayerManager
@@ -716,6 +762,10 @@ PrefabInstance:
     - target: {fileID: 7376414307094923649, guid: 703b1e04c8a5ddc4b9c860006cd56b9a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079483464681190695, guid: 703b1e04c8a5ddc4b9c860006cd56b9a, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1406,7 +1456,7 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 1806532239}
-    PlayerPrefab: {fileID: 8946537010725206704, guid: c0fe9ed59b212a54fb9345090786fd5a, type: 3}
+    PlayerPrefab: {fileID: 0}
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: 785cc5ecc72bde54590811ec2af9d8bf, type: 2}
@@ -1442,7 +1492,7 @@ Transform:
   m_GameObject: {fileID: 1806532238}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -23.29, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1463,6 +1513,8 @@ MonoBehaviour:
   m_ServerButton: {fileID: 2001355353}
   m_HostButton: {fileID: 1000092915}
   m_ClientButton: {fileID: 1804354431}
+  hostPrefab: {fileID: 8946537010725206704, guid: c0fe9ed59b212a54fb9345090786fd5a, type: 3}
+  clientPrefab: {fileID: 965999613522909913, guid: b101230baf1036a488a50751a25dd703, type: 3}
 --- !u!1 &2001355351
 GameObject:
   m_ObjectHideFlags: 0
