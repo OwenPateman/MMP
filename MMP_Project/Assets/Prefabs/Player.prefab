@@ -236,6 +236,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
+  jumpForce: 4
+  moveSpeed: 6
 --- !u!114 &5737991032653018008
 MonoBehaviour:
   m_ObjectHideFlags: 0
