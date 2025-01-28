@@ -48,14 +48,14 @@ public class Player_Input_Handler : NetworkBehaviour
     {
         if (!IsOwner) return;
 
-        moveInput = ctx.ReadValue<Vector2>(); // Capture movement input (x and y)
+        moveInput = ctx.ReadValue<Vector2>(); 
     }
 
     private void Handle_MoveCanceled(InputAction.CallbackContext ctx)
     {
         if (!IsOwner) return;
 
-        moveInput = Vector2.zero; // Stop movement when input is released
+        moveInput = Vector2.zero; 
     }
 
     private void FixedUpdate()
