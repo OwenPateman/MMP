@@ -8,7 +8,6 @@ public class PrefabSpawner : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-        Debug.Log($"NetworkSpawn called. IsHost: {IsHost}, IsClient: {IsClient}");
 
         if (IsHost)
         {

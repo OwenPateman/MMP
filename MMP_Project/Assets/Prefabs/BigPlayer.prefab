@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 6328508992511448678}
   - component: {fileID: 5063835406934493708}
   - component: {fileID: 7779062184348835177}
+  - component: {fileID: 9123246098277742190}
   m_Layer: 0
   m_Name: BigPlayer
   m_TagString: Untagged
@@ -348,7 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1759176467
+  GlobalObjectIdHash: 904460561
   InScenePlacedSourceGlobalObjectIdHash: 755447821
   DeferredDespawnTick: 0
   Ownership: 1
@@ -429,3 +430,36 @@ MonoBehaviour:
   UseRigidBodyForMotion: 0
   AutoUpdateKinematicState: 1
   AutoSetKinematicOnDespawn: 1
+--- !u!114 &9123246098277742190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8946537010725206704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d9db9626104da59357651088226725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PresetAsset: {fileID: 0}
+  m_PresetReference:
+    rid: 3124830839287840958
+  m_Scenario:
+    rid: -2
+  m_IsScenarioSettingsFolded: 0
+  AutoRunScenario: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 3124830839287840958
+      type: {class: NetworkSimulatorPreset, ns: Unity.Multiplayer.Tools.NetworkSimulator.Runtime, asm: Unity.Multiplayer.Tools.NetworkSimulator.Runtime}
+      data:
+        <Name>k__BackingField: 
+        <Description>k__BackingField: 
+        <PacketDelayMs>k__BackingField: 0
+        <PacketJitterMs>k__BackingField: 0
+        <PacketLossInterval>k__BackingField: 0
+        <PacketLossPercent>k__BackingField: 0
